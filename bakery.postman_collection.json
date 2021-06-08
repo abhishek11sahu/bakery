@@ -1,0 +1,618 @@
+{
+	"info": {
+		"_postman_id": "c5e439fc-f2cb-4360-9f73-72a9782fd641",
+		"name": "bakery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/ingredients_list/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/ingredients_list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"ingredients_list",
+						""
+					]
+				},
+				"description": "get inventory list"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/ingredients_list/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"item_name\": \"cream\",\n    \"quantity\": 3,\n    \"quantity_unit\": \"Lts\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/ingredients_list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"ingredients_list",
+						""
+					]
+				},
+				"description": "create new inventory item"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/ingredients_update/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/ingredients_update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"ingredients_update",
+						"1"
+					]
+				},
+				"description": "get inventory by id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/ingredients_update/1",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\": 10,\n    \"quantity_unit\": \"Kgs\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/ingredients_update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"ingredients_update",
+						"1"
+					]
+				},
+				"description": "update inventory item"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/ingredients_update/4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\": 10,\n    \"quantity_unit\": \"Kgs\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/ingredients_update/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"ingredients_update",
+						"4"
+					]
+				},
+				"description": "delete item from inventory"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/menu_list/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/menu_list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"menu_list",
+						""
+					]
+				},
+				"description": " get menu list"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/menu_list/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dish_name\": \"dish 4\",\n    \"ingredients\": [1,2],\n    \"cost_price\": \"1.00\",\n    \"selling_price\": \"5.00\",\n    \"created_at\": \"2021-06-06T13:40:37.473476Z\",\n    \"updated_at\": \"2021-06-06T13:40:37.473508Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/menu_create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"menu_create",
+						""
+					]
+				},
+				"description": "create new menu item"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/menu_update/2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/menu_update/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"menu_update",
+						"2"
+					]
+				},
+				"description": "get detail of menu item"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/inventory/menu_update/9",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\": 10,\n    \"quantity_unit\": \"Kgs\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inventory/menu_update/9",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"menu_update",
+						"9"
+					]
+				},
+				"description": "delete a menu item"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/accounts/signup/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"sahu10\",\n    \"password\": \"@bhishek\",\n    \"first_name\": \"abhishek\",\n    \"last_name\": \"sahu\",\n    \"email\": \"qwer@abc.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/accounts/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"accounts",
+						"signup",
+						""
+					]
+				},
+				"description": "user signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/accounts/admin_signup/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"sahu00\",\n    \"password\": \"@bhishek\",\n    \"first_name\": \"abhishek\",\n    \"last_name\": \"sahu\",\n    \"email\": \"qwer@abc.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/accounts/admin_signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"accounts",
+						"admin_signup",
+						""
+					]
+				},
+				"description": "logged in admin can create new admin account"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/token/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"sahu0\", \"password\":\"@bhishek\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				},
+				"description": "login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/token/refresh/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYyMzE3MjgzMCwianRpIjoiZTc4Mzc4M2JiM2E4NGYzOWFiZGRmMWI0MjEzNjk1OGIiLCJ1c2VyX2lkIjoxM30.hZe5eUQNx_y0MO19zdcDxzHM_Ct5iSjO2BAQh5AkaZg\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					]
+				},
+				"description": "refresh login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/accounts/user_list/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/accounts/user_list/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"accounts",
+						"user_list",
+						""
+					]
+				},
+				"description": "get users list"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/order/orders_list/13",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/order/orders_list/13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"order",
+						"orders_list",
+						"13"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				},
+				"description": "get order list for a user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/order/orders_create/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzMTYyODA2LCJqdGkiOiIxZTI3YjM0ZDJiYjY0NDQ3ODFkZWViNzRlNTU5YTZkMyIsInVzZXJfaWQiOjE0fQ.eI0rujf-APLZbI4P6m1XRZ5oEQ_JeTHPsDQD0aGGz8Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":13,\n    \"items\":[1,2,3],\n    \"amount\":100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/order/orders_create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"order",
+						"orders_create",
+						""
+					]
+				},
+				"description": "create order"
+			},
+			"response": []
+		}
+	]
+}
